@@ -99,3 +99,16 @@ h1 {
 .presentation {
     text-align: center;
 }
+
+.line {
+    border-bottom: 2px solid;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.staff {
+    display: flex;
+    justify-content: space-around;
+}
