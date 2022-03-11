@@ -1,0 +1,18 @@
+/* Aucune bordure */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Couleur de l'arrière-plan */
+body {
+    background-color: #155b55;
+}
+
+/* Image du site, Bouton se connecter */
+img, button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
