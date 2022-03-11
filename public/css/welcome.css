@@ -11,8 +11,17 @@ body {
 }
 
 /* Image du site, Bouton se connecter */
-img, button {
+img, input {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #155b55;
+    border-radius: 20px;
+    font-size: 24px;
 }
