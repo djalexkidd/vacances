@@ -27,7 +27,7 @@ body {
 }
 
 /* Barre de navigation */
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -38,7 +38,7 @@ ul {
 }
 
 /* Boutons de navigation */
-li a {
+header li a {
     display: flex;
     text-align: center;
     padding: 14px 16px;
@@ -46,62 +46,32 @@ li a {
     font-size: 20px;
 }
 
-/* PAGE D'ACCEUIL */
-
-.img-small {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.img-medium {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.presentation-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 h1 {
     font-family: 'montserrat', sans-serif;
     color: #155b55;
-}
-
-.search-bar {
-    background-color: #155b55;
-    display: flex;
-    width: 80%;
-    height: 150px;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.input-small {
-    width: 60px;
-}
-
-.img-cover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: 90vw;
-}
-
-.search-component {
-    margin-right: 5px;
-}
-
-.presentation {
     text-align: center;
+}
+
+.about {
+    font-size: 24px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.staff-imgs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 10%;
+}
+
+.staff-imgs img {
+    height: 204px;
 }
 
 .line {
@@ -123,6 +93,12 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media (min-width: 1400px) {
-    .img-cover { height: 720px; }
+/* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
+@media (min-width: 1200px) {
+    .staff-imgs { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
+@media (min-width: 800px) {
+    .staff-imgs img { height: 408px; }
 }

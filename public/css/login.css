@@ -27,7 +27,7 @@ body {
 }
 
 /* Barre de navigation */
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -38,7 +38,7 @@ ul {
 }
 
 /* Boutons de navigation */
-li a {
+header li a {
     display: flex;
     text-align: center;
     padding: 14px 16px;
@@ -46,62 +46,39 @@ li a {
     font-size: 20px;
 }
 
-/* PAGE D'ACCEUIL */
-
-.img-small {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.img-medium {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.presentation-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 h1 {
     font-family: 'montserrat', sans-serif;
     color: #155b55;
+    text-align: center;
 }
 
-.search-bar {
-    background-color: #155b55;
+.container {
     display: flex;
-    width: 80%;
-    height: 150px;
+    width: 100%;
+    height: 200px;
+    background-color: #155b55;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 0 auto;
-    flex-wrap: wrap;
+    font-size: 24px;
 }
 
-.input-small {
-    width: 60px;
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.img-cover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: 90vw;
-}
-
-.search-component {
-    margin-right: 5px;
-}
-
-.presentation {
-    text-align: center;
+.sendform {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #155b55;
+    border-radius: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 50%;
 }
 
 .line {
@@ -123,6 +100,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media (min-width: 1400px) {
-    .img-cover { height: 720px; }
+/* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
+@media (min-width: 1000px) {
+    .container { width: 50%; }
 }
