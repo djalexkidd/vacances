@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commodities",
+  "info": {
+    "singularName": "commodity",
+    "pluralName": "commodities",
+    "displayName": "commodity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chambres": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "salleDeBain": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "nom_de_la_maison": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "equipements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::equipement.equipement",
+      "inversedBy": "commodities"
+    }
+  }
+}

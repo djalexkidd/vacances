@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maisons",
+  "info": {
+    "singularName": "maison",
+    "pluralName": "maisons",
+    "displayName": "maison",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "secteur_geo": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "surface": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::price.price"
+    },
+    "commodity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commodity.commodity"
+    },
+    "photo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
