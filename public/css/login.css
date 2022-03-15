@@ -100,6 +100,11 @@ form {
     margin-bottom: 20px;
 }
 
+.failed {
+    text-align: center;
+    display: none;
+}
+
 /* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
 @media (min-width: 1000px) {
     .container { width: 50%; }
