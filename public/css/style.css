@@ -123,6 +123,15 @@ h1 {
     margin-bottom: 20px;
 }
 
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
 @media (min-width: 1400px) {
     .img-cover { height: 720px; }
 }

@@ -52,28 +52,6 @@ h1 {
     text-align: center;
 }
 
-.about {
-    font-size: 24px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.list {
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.staff-imgs {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    margin-left: 10%;
-}
-
-.staff-imgs img {
-    height: 204px;
-}
-
 .line {
     border-bottom: 2px solid;
     width: 90%;
@@ -91,23 +69,4 @@ h1 {
 .line-header {
     border-bottom: 2px solid;
     margin-bottom: 20px;
-}
-
-button {
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: black;
-    border-radius: 20px;
-    font-size: 24px;
-}
-
-/* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
-@media (min-width: 1200px) {
-    .staff-imgs { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */
-@media (min-width: 800px) {
-    .staff-imgs img { height: 408px; }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/houses.css">
     <title>Les vacances chez Gustave</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
         <ul>
             <!-- Logo du site -->
-            <img class="logo" src="img/logo.png" />
+            <a href="index.html"><img class="logo" src="img/logo.png" /></a>
             <!-- Boutons de navigation -->
             <li><a href="houses.html">Trouver un bien</a></li>
             <li><a href="about.html">À propos de nous</a></li>
@@ -22,50 +22,35 @@
         <div class="line-header"></div>
     </header>
 
-    <h1>Qui sommes nous ?</h1>
-
-    <p class="about">
-    5 amis, Gustave Maurice, Jean Marlin, Martin
-    Craie, Marc Lavie et Paul Alker, nous nous sommes lancés dans une aventure unique : proposer des biens d’exception à la location,
-    par le biais privilégié de la relation directe avec les clients: un marketing direct, une mise en relation privée, du bouche à oreille, un réseau sans démarche de communication grand public. Notre objectif
-    : instaurer une relation privilégiée de confiance avec le client dans
-    la location des biens.
-    </p>
-
-    <ul class="list">
-        <p>Nos plus values:</p>
-        <li>Contacts directs avec les associés</li>
-        <li>Locations haut de gamme à prix compétitifs</li>
-        <li>Partenariat avec des chef étoilés - possibilité de réserver un chef durant le séjour</li>
-        <li>Visite personnalisée avec gestion du déplacement vers le lieu</li>
-    </ul>
-
-    <div class="staff-imgs">
-        <div>
-            <img src="img/staff/gustave.jpg" />
-            <h2>Gustave Maurice</h2>
+    <div class="search-bar">
+        <div class="search-component">
+            <p>Où allez-vous ?</p>
+            <input>
         </div>
-
-        <div>
-            <img src="img/staff/jean.jpg" />
-            <h2>Jean Marlin</h2>
+        <div class="search-component">
+            <p>Départ</p>
+            <input class="input-small">
         </div>
-
-        <div>
-            <img src="img/staff/marc.jpg" />
-            <h2>Marc Lavie</h2>
+        <div class="search-component">
+            <p>Arrivée</p>
+            <input class="input-small">
         </div>
-
-        <div>
-            <img src="img/staff/paul.jpg" />
-            <h2>Paul Alker</h2>
+        <div class="search-component">
+            <p>Adultes</p>
+            <input class="input-small">
         </div>
-
-        <div>
-            <img src="img/staff/martin.jpg" />
-            <h2>Martin Craie</h2>
+        <div class="search-component">
+            <p>Enfants</p>
+            <input class="input-small">
         </div>
+        <div class="search-component">
+            <p>Chambres</p>
+            <input class="input-small">
+        </div>
+        <button>Rechercher</button>
     </div>
+
+    <div class="affichage"></div>
 
     <footer>
         <div class="line"></div>
@@ -102,5 +87,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/houses.js"></script>
 </body>
 </html>
