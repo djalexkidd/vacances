@@ -29,6 +29,8 @@ npm i
 npm run develop
 ```
 
+Pour accéder à Strapi, entrez l'adresse http://localhost:1337/admin/ dans un navigateur internet.
+
 ## Identifiants par défaut
 
 E-mail: gustave.m@gmail.com
