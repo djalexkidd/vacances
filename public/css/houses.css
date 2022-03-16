@@ -46,6 +46,10 @@ header li a {
     font-size: 20px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 h1 {
     font-family: 'montserrat', sans-serif;
     color: #155b55;
@@ -103,4 +107,14 @@ button {
 
 a > img:only-child {
     display: block;
+}
+
+.carte {
+    display: flex;
+    height: 180px;
+}
+
+.image {
+    width: 300px;
+    height: 180px;
 }

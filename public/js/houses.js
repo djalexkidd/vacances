@@ -1,4 +1,4 @@
-const APICALL = "http://localhost:1337/api/maisons/"
+const APICALL = "http://localhost:1337/api/maisons?populate=photo"
 // const COMMODITIES = "http://localhost:1337/api/commodities/"
 
 const affichage = document.querySelector('.affichage')
@@ -23,7 +23,7 @@ function creationCarte(maison) {
     for(let i = 0; i < maison.data.length; i++) {
         const carteHTML = `
         <div class="carte">
-            <img src="${maison.data[i].attributes.photo}" alt="Image de la maison" class="image">
+            <img src="http://localhost:1337${maison.data[i].attributes.photo.data?.attributes.url}" alt="Image de la maison" class="image">
             <h2>${maison.data[i].attributes.nom}</h2>
             <ul class="cont-infos">
                 <li class="description">${maison.data[i].attributes.description}</li>
@@ -33,7 +33,6 @@ function creationCarte(maison) {
         </div>
         `
 
-        console.log(maison.data[i].attributes.nom)
         affichage.innerHTML += carteHTML
     }
 }

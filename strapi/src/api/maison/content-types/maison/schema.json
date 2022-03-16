@@ -38,8 +38,15 @@
       "target": "api::commodity.commodity"
     },
     "photo": {
-      "type": "string",
-      "required": true
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

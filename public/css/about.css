@@ -26,6 +26,10 @@ body {
     width: 150px;
 }
 
+a > img:only-child {
+    display: block;
+}
+
 /* Barre de navigation */
 header ul {
     display: flex;
