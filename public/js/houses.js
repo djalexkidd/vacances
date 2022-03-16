@@ -24,11 +24,11 @@ function creationCarte(maison) {
         const carteHTML = `
         <div class="carte">
             <img src="http://localhost:1337${maison.data[i].attributes.photo.data?.attributes.url}" alt="Image de la maison" class="image">
-            <h2>${maison.data[i].attributes.nom}</h2>
             <ul class="cont-infos">
+                <li><h2>${maison.data[i].attributes.nom}</h2></li>
                 <li class="description">${maison.data[i].attributes.description}</li>
                 <li class="source">Secteur géographique : ${maison.data[i].attributes.secteur_geo}</li>
-                <a class="link" href="details.html?${maison.data[i].id}">Voir détails</a>
+                <li><a class="link" href="details.html?${maison.data[i].id}">Voir détails</a></li>
             </ul>
         </div>
         `

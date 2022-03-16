@@ -62,7 +62,6 @@ button {
 h1 {
     font-family: 'montserrat', sans-serif;
     color: #155b55;
-    text-align: center;
 }
 
 .line {
@@ -82,4 +81,18 @@ h1 {
 .line-header {
     border-bottom: 2px solid;
     margin-bottom: 20px;
+}
+
+.affichage {
+    display: flex;
+}
+
+.house-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-photo {
+    width: 450px;
+    height: 270px;
 }

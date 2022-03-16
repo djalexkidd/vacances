@@ -109,9 +109,17 @@ a > img:only-child {
     display: block;
 }
 
+.affichage {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
 .carte {
     display: flex;
     height: 180px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .image {
