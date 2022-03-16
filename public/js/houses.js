@@ -51,7 +51,7 @@ let saveData = {
 disconnectButton.addEventListener('click', (e) => {
     savedToken[0].token = null
     saveObj()
-    window.location.href = "welcome.html"
+    window.location.href = "index.html"
 })
 
 function saveObj() {

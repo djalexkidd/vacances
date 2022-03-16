@@ -33,7 +33,7 @@ async function dataUser(utilisateur, motDePasse) {
             token : data.jwt
         }
         saveObj()
-        window.location.href = "index.html"
+        window.location.href = "home.html"
     } else {
         loginFailed.style.display = "block"
     }
@@ -50,5 +50,5 @@ function saveObj() {
 }
 
 if (savedToken[0].token != null) {
-    window.location.href = "index.html"
+    window.location.href = "home.html"
 }
