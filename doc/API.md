@@ -26,6 +26,8 @@ Exemple d'utilisation : ```const APICALL = "http://localhost:1337/api/maisons"``
 
 ``` maison.data[i].attributes.photo.data?.attributes.url``` Photo
 
+```maison.data[i].id``` Indentifiant de la maison
+
 ### Authentification
 
 ```data.jwt``` Jeton

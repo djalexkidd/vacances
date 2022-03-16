@@ -1,7 +1,8 @@
-const APICALL = "http://localhost:1337/api/maisons?populate=photo"
-// const COMMODITIES = "http://localhost:1337/api/commodities/"
+const queryString = window.location.search.substring(1);
 
-const affichage = document.querySelector('.affichage')
+const APICALL = `http://localhost:1337/api/maisons/${queryString}?populate=photo`
+
+const houseName = document.querySelector(".house-name")
 const disconnectButton = document.querySelector(".disconnect")
 const savedToken = JSON.parse(window.localStorage.getItem('data'))
 
@@ -20,21 +21,8 @@ async function callAPI() {
 
 // Affichage de la carte de la maison
 function creationCarte(maison) {
-    for(let i = 0; i < maison.data.length; i++) {
-        const carteHTML = `
-        <div class="carte">
-            <img src="http://localhost:1337${maison.data[i].attributes.photo.data?.attributes.url}" alt="Image de la maison" class="image">
-            <h2>${maison.data[i].attributes.nom}</h2>
-            <ul class="cont-infos">
-                <li class="description">${maison.data[i].attributes.description}</li>
-                <li class="source">Secteur géographique : ${maison.data[i].attributes.secteur_geo}</li>
-                <a class="link" href="details.html?${maison.data[i].id}">Voir détails</a>
-            </ul>
-        </div>
-        `
-
-        affichage.innerHTML += carteHTML
-    }
+    console.log(`${maison.data.attributes.nom}`)
+    houseName.innerText = `${maison.data.attributes.nom}`
 }
 
 callAPI()
