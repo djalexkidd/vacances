@@ -1,0 +1,126 @@
+/* Aucune bordure */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* POLICES */
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto.ttf') format('truetype');
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+/* BARRE DE NAVIGATION */
+
+/* Logo du site */
+.logo {
+    width: 150px;
+}
+
+a > img:only-child {
+    display: block;
+}
+
+/* Barre de navigation */
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Boutons de navigation */
+header li a {
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'montserrat', sans-serif;
+    color: #155b55;
+}
+
+.line {
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vertical-line {
+    position: absolute;
+    border-left: 2px solid;
+    height: 500px;
+    left: 200px;
+    top: 240px;
+}
+
+.left-options {
+    display: flex;
+}
+
+.right-options {
+    margin-left: 100px;
+}
+
+.option-line,
+.settings {
+    display: flex;
+}
+
+.option-component {
+    margin-bottom: 25px;
+}
+
+.send-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #219087;
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.send-button:hover {
+    background-color: #176962;
+}
+
+.staff {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.line-header {
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 207px;
+}

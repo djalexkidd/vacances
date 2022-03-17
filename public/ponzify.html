@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/ponzify.css">
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Les vacances chez Gustave</title>
 </head>
@@ -24,50 +24,22 @@
         <div class="line-header"></div>
     </header>
 
-    <h1>Qui sommes nous ?</h1>
+    <h1>Parrainage</h1>
+    <h2>Veuillez entrer les informations de la personne à parrainer</h2>
 
-    <p class="about">
-    5 amis, Gustave Maurice, Jean Marlin, Martin
-    Craie, Marc Lavie et Paul Alker, nous nous sommes lancés dans une aventure unique : proposer des biens d’exception à la location,
-    par le biais privilégié de la relation directe avec les clients: un marketing direct, une mise en relation privée, du bouche à oreille, un réseau sans démarche de communication grand public. Notre objectif
-    : instaurer une relation privilégiée de confiance avec le client dans
-    la location des biens.
-    </p>
-
-    <ul class="list">
-        <p>Nos plus values:</p>
-        <li>Contacts directs avec les associés</li>
-        <li>Locations haut de gamme à prix compétitifs</li>
-        <li>Partenariat avec des chef étoilés - possibilité de réserver un chef durant le séjour</li>
-        <li>Visite personnalisée avec gestion du déplacement vers le lieu</li>
-    </ul>
-
-    <div class="staff-imgs">
-        <div>
-            <img src="img/staff/gustave.jpg" />
-            <h2>Gustave Maurice</h2>
-        </div>
-
-        <div>
-            <img src="img/staff/jean.jpg" />
-            <h2>Jean Marlin</h2>
-        </div>
-
-        <div>
-            <img src="img/staff/marc.jpg" />
-            <h2>Marc Lavie</h2>
-        </div>
-
-        <div>
-            <img src="img/staff/paul.jpg" />
-            <h2>Paul Alker</h2>
-        </div>
-
-        <div>
-            <img src="img/staff/martin.jpg" />
-            <h2>Martin Craie</h2>
-        </div>
+    <div class="container">
+        <form class="user-form">
+            <p>Nom</p>
+            <input class="name" required>
+            <p>E-mail</p>
+            <input class="email" type="email" required>
+            <p>Message</p>
+            <input class="message" required>
+            <input class="sendform" type="submit" value="Envoyer" />
+        </form>
     </div>
+
+    <p class="failed">E-mail ou mot de passe incorrect.</p>
 
     <footer>
         <div class="line"></div>
@@ -104,5 +76,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/ponzify.js"></script>
 </body>
 </html>

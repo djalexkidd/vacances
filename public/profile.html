@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Les vacances chez Gustave</title>
 </head>
@@ -24,48 +24,59 @@
         <div class="line-header"></div>
     </header>
 
-    <h1>Qui sommes nous ?</h1>
+    <h1>Mon compte</h1>
+    <h2 class="full-name">John Doe</h2>
+    <div class="line-header"></div>
 
-    <p class="about">
-    5 amis, Gustave Maurice, Jean Marlin, Martin
-    Craie, Marc Lavie et Paul Alker, nous nous sommes lancés dans une aventure unique : proposer des biens d’exception à la location,
-    par le biais privilégié de la relation directe avec les clients: un marketing direct, une mise en relation privée, du bouche à oreille, un réseau sans démarche de communication grand public. Notre objectif
-    : instaurer une relation privilégiée de confiance avec le client dans
-    la location des biens.
-    </p>
+    <div class="settings">
+        <div class="left-options">
+            <ul>
+                <li><p>Mes informations</p></li>
+                <li><p>Mes commandes</p></li>
+                <li><p>Mes réclamations</p></li>
+            </ul>
 
-    <ul class="list">
-        <p>Nos plus values:</p>
-        <li>Contacts directs avec les associés</li>
-        <li>Locations haut de gamme à prix compétitifs</li>
-        <li>Partenariat avec des chef étoilés - possibilité de réserver un chef durant le séjour</li>
-        <li>Visite personnalisée avec gestion du déplacement vers le lieu</li>
-    </ul>
-
-    <div class="staff-imgs">
-        <div>
-            <img src="img/staff/gustave.jpg" />
-            <h2>Gustave Maurice</h2>
+            <div class="vertical-line"></div>
         </div>
 
-        <div>
-            <img src="img/staff/jean.jpg" />
-            <h2>Jean Marlin</h2>
-        </div>
+        <div class="right-options">
+            <div class="option-line"><h3>Mes informations</h3></div>
 
-        <div>
-            <img src="img/staff/marc.jpg" />
-            <h2>Marc Lavie</h2>
-        </div>
+            <div class="option-line">
+                <div class="option-component">
+                    <p>Nom</p>
+                    <input class="last-name">
+                </div>
 
-        <div>
-            <img src="img/staff/paul.jpg" />
-            <h2>Paul Alker</h2>
-        </div>
+                <div class="option-component">
+                    <p>Prénom</p>
+                    <input class="first-name">
+                </div>
+            </div>
 
-        <div>
-            <img src="img/staff/martin.jpg" />
-            <h2>Martin Craie</h2>
+            <div class="option-line">
+                <div class="option-component">
+                    <p>E-mail</p>
+                    <p class="user-email">...</p>
+                </div>
+            </div>
+
+            <div class="option-line">
+                <div class="option-component">
+                    <p>Mot de passe actuel</p>
+                    <input class="current-password" type="password">
+                </div>
+                <div class="option-component">
+                    <p>Nouveau mot de passe</p>
+                    <input class="new-password" type="password">
+                </div>
+            </div>
+
+            <div class="option-line">
+                <form class="send-button">
+                    <input class="send-button" type="submit" value="Confirmer" />
+                </form>
+            </div>
         </div>
     </div>
 
@@ -104,5 +115,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/profile.js"></script>
 </body>
 </html>
