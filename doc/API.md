@@ -14,20 +14,27 @@ Exemple d'utilisation : ```const APICALL = "http://localhost:1337/api/maisons"``
 
 ```POST /api/auth/local``` Authentification des utilisateurs
 
+```GET /api/users/me``` Informations sur l'utilisateur actuel
+
 ## Liste des attributs
 
 ### Maisons
 
-```maison.data[i].attributes.nom``` Nom de la maison
+```maison.data.attributes.nom``` Nom de la maison
 
-```maison.data[i].attributes.description``` Description de la maison
+```maison.data.attributes.description``` Description de la maison
 
-```maison.data[i].attributes.secteur_geo``` Secteur géographique
+```maison.data.attributes.secteur_geo``` Secteur géographique
 
-``` maison.data[i].attributes.photo.data?.attributes.url``` Photo
+``` maison.data.attributes.photo.data.attributes.url``` Photo
 
-```maison.data[i].id``` Indentifiant de la maison
+```maison.data.id``` Indentifiant de la maison
 
 ### Authentification
 
 ```data.jwt``` Jeton
+
+### Profil de l'utilisateur
+
+```user.firstName``` Prénom
+```user.lastName``` Nom de famille

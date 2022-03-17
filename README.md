@@ -18,7 +18,7 @@ La documentation est disponible dans le répertoire ```doc/``` du dépôt.
 
 ## Contributeurs
 
-- Alexandre Poyer (Front-End et documentation)
-- Cyril Prigent (Back-End)
-- Morgane Higy (Back-End)
+- Alexandre Poyer (Front-End, maquette et documentation)
+- Cyril Prigent (Back-End et maquette)
+- Morgane Higy (Maquette)
 - Stephen Gouriou (Front-End)
