@@ -28,6 +28,7 @@ function creationCarte(maison) {
             <h1 class="house-name">${maison.data.attributes.nom}</h1>
             <h2 class="house-geo">${maison.data.attributes.secteur_geo}</h2>
             <p class="house-description">${maison.data.attributes.description}</p>
+            <p class="house-surface">${maison.data.attributes.surface} m²</p>
         </div>
         `
 
