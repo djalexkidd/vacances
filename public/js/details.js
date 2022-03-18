@@ -7,6 +7,7 @@ const PRICE = `http://localhost:1337/api/prices/${queryString}`
 const affichage = document.querySelector(".affichage")
 const houseName = document.querySelector(".house-name")
 const disconnectButton = document.querySelector(".disconnect")
+const sendForm = document.querySelector(".container")
 const savedToken = JSON.parse(window.localStorage.getItem('data'))
 
 const time = new Date()
@@ -79,6 +80,10 @@ function creationCarte(maison, commodity, price) {
 }
 
 callAPI()
+
+sendForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+})
 
 /* FONCTIONS RÉSERVÉS POUR LA CONNEXION */
 // On créé un objet qui va nous permettre d'exploiter des données

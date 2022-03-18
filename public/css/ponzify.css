@@ -118,9 +118,8 @@ form {
     margin-bottom: 20px;
 }
 
-.failed {
-    text-align: center;
-    display: none;
+textarea {
+    resize: none;
 }
 
 /* Ajuste les dimentions de la grille de projets et du texte de la navbar pour les résolutions inférieures */

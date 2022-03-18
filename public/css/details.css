@@ -96,3 +96,43 @@ h1 {
     width: 450px;
     height: 270px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #155b55;
+    color: white;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.option-component {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.message-box {
+    height: 500px;
+    width: 60vw;
+}
+
+.sendform {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #155b55;
+    border-radius: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+}
